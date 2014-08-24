@@ -28,10 +28,10 @@ class TitleState extends FlxState
 		_bgTitle.loadGraphic(Reg.BG_TITLE);
 		add(_bgTitle);
 
-		_txtTitle = new FlxText(150, 180, "UNIVERSAL LOVE",35);
+		_txtTitle = new FlxText(150, 180,500, "UNIVERSAL LOVE",35);
 		_txtTitle.setBorderStyle(FlxText.BORDER_SHADOW, FlxColor.BLUE, 3, 3);
-		_txtPressText = new FlxText(220, 340, "Press SPACE to play", 16);
-		_txtAuthor =  new FlxText(260, 400, "2014 sbarrio",14);
+		_txtPressText = new FlxText(220, 340,500, "Press SPACE to play", 16);
+		_txtAuthor =  new FlxText(260, 400,500, "2014 sbarrio",14);
 		
 		add(_txtTitle);
 		add(_txtPressText);

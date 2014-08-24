@@ -35,24 +35,24 @@ class MenuState extends FlxState
 		_bgMenu.loadGraphic(Reg.BG_TITLE);
 		add(_bgMenu);
 
-		_txtChoose = new FlxText(150,80,"Choose your star system:",20);
+		_txtChoose = new FlxText(150,80,500,"Choose your star system:",20);
 		add(_txtChoose);
 
-		_txtScenario1 = new FlxText(200,150,"Newb nebula",18);
+		_txtScenario1 = new FlxText(200,150,500,"Newb nebula",18);
 		add(_txtScenario1);
 
-		_txtScenario2 = new FlxText(200,200,"Bodyguard cluster",18);
+		_txtScenario2 = new FlxText(200,200,500,"Bodyguard cluster",18);
 		add(_txtScenario2);
 
-		_txtScenario3 = new FlxText(200,250,"Busy sector",18);
+		_txtScenario3 = new FlxText(200,250,500,"Busy sector",18);
 		add(_txtScenario3);
 
-		_txtScenario4 = new FlxText(200,300,"Death rim",18);
+		_txtScenario4 = new FlxText(200,300,500,"Death rim",18);
 		add(_txtScenario4);
 
-		var _txtEscape = new FlxText(160,430, "ESC: cancel/exit",12);
+		var _txtEscape = new FlxText(160,430,500, "ESC: cancel/exit",12);
 		add(_txtEscape);
-		var _txtConfirm = new FlxText(300,430, "SPACE: confirm",12);
+		var _txtConfirm = new FlxText(300,430,500, "SPACE: confirm",12);
 		add(_txtConfirm);
 
 		_chooserIcon = new FlxSprite(180, 155);

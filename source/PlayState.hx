@@ -284,8 +284,8 @@ class PlayState extends FlxState
 		_hudElements.add(_targetHud);
 		
 
-		_attackLabel = new FlxText(433,380,"ATTACK", 14);
-		_loveLabel = new FlxText(545,380,"LOVE", 14);
+		_attackLabel = new FlxText(433,380,100,"ATTACK", 14);
+		_loveLabel = new FlxText(545,380,100,"LOVE", 14);
 		_hudElements.add(_attackLabel);
 		_hudElements.add(_loveLabel);
 
@@ -300,7 +300,7 @@ class PlayState extends FlxState
 
 		//creates health and labelname for every planet
 		for (p in _planets){
-			var newLabel = new FlxText(p.x,p.y + p.height + 5,p._name + "  LV" + p._level ,10);
+			var newLabel = new FlxText(p.x,p.y + p.height + 5,100,p._name + "  LV" + p._level ,10);
 			p._nameLabel = newLabel;
 			_hudElements.add(newLabel);
 
@@ -309,7 +309,7 @@ class PlayState extends FlxState
 			_hudElements.add(newBar);
 		}
 
-		var newLabel = new FlxText(475,425, _player._name + "  LV" + _player._level ,14);
+		var newLabel = new FlxText(475,425,100, _player._name + "  LV" + _player._level ,14);
 		_player._nameLabel = newLabel;
 		add(newLabel);
 
@@ -322,9 +322,9 @@ class PlayState extends FlxState
 
 
 		//Message board
-		_messageBoardSlot1 = new FlxText(10,35,"", 9);
-		_messageBoardSlot2 = new FlxText(10,20,"", 9);
-		_messageBoardSlot3 = new FlxText(10,5,"", 9);
+		_messageBoardSlot1 = new FlxText(10,35,300,"", 9);
+		_messageBoardSlot2 = new FlxText(10,20,300,"", 9);
+		_messageBoardSlot3 = new FlxText(10,5,300,"", 9);
 
 		add(_messageBoardSlot1);
 		add(_messageBoardSlot2);
@@ -823,9 +823,9 @@ class PlayState extends FlxState
 
 	private function gameOver(){
 
-		_gameOverTitle = new FlxText(200,200,"GAME OVER", 40);
+		_gameOverTitle = new FlxText(200,200,300,"GAME OVER", 40);
 		add(_gameOverTitle);
-		_gameOverSubTitle = new FlxText(130,300,"Press SPACE to go back to menu", 20);
+		_gameOverSubTitle = new FlxText(130,300,500,"Press SPACE to go back to menu", 20);
 		add(_gameOverSubTitle);
 
 		if (_controlPanelShowing){
@@ -836,9 +836,9 @@ class PlayState extends FlxState
 	}
 
 	private function gameOverByPlayerDestruction(){
-		_gameOverTitle = new FlxText(200,200,"GAME OVER", 40);
+		_gameOverTitle = new FlxText(200,200,300,"GAME OVER", 40);
 		add(_gameOverTitle);
-		_gameOverSubTitle = new FlxText(130,300,"Press SPACE to go back to menu", 20);
+		_gameOverSubTitle = new FlxText(130,300,500,"Press SPACE to go back to menu", 20);
 		add(_gameOverSubTitle);
 
 		if (_controlPanelShowing){
@@ -850,9 +850,9 @@ class PlayState extends FlxState
 	}
 
 	private function gameOverBySurvivorDestroyed(){
-		_gameOverTitle = new FlxText(200,200,"GAME OVER", 40);
+		_gameOverTitle = new FlxText(200,200,300,"GAME OVER", 40);
 		add(_gameOverTitle);
-		_gameOverSubTitle = new FlxText(130,300,"Press SPACE to go back to menu", 20);
+		_gameOverSubTitle = new FlxText(130,300,500,"Press SPACE to go back to menu", 20);
 		add(_gameOverSubTitle);
 
 		if (_controlPanelShowing){
@@ -863,9 +863,9 @@ class PlayState extends FlxState
 	}
 
 	private function gameOverByWinHealth(){
-		_gameOverTitle = new FlxText(210,200,"YOU WIN", 40);
+		_gameOverTitle = new FlxText(210,200,300,"YOU WIN", 40);
 		add(_gameOverTitle);
-		_gameOverSubTitle = new FlxText(130,300,"Press SPACE to go back to menu", 20);
+		_gameOverSubTitle = new FlxText(130,300,500,"Press SPACE to go back to menu", 20);
 		add(_gameOverSubTitle);
 
 		if (_controlPanelShowing){
@@ -876,9 +876,9 @@ class PlayState extends FlxState
 	}
 
 	private function gameOverByWinDestruction(){
-		_gameOverTitle = new FlxText(210,200,"YOU WIN", 40);
+		_gameOverTitle = new FlxText(210,200,300,"YOU WIN", 40);
 		add(_gameOverTitle);
-		_gameOverSubTitle = new FlxText(130,300,"Press SPACE to go back to menu", 20);
+		_gameOverSubTitle = new FlxText(130,300,500,"Press SPACE to go back to menu", 20);
 		add(_gameOverSubTitle);
 
 		if (_controlPanelShowing){
